@@ -14,8 +14,8 @@ describe("User routes", () => {
         await insertUsers([userOne]);
 
         const res = await request(app)
-          .get(`/v1/users/${userOne._id}`)
-          .send();
+        .get(`/v1/users/${userOne._id}`)
+        .send();
 
         expect(res.status).toEqual(httpStatus.OK);
 

@@ -2,7 +2,8 @@ const express = require("express");
 const compression = require("compression");
 const cors = require("cors");
 const httpStatus = require("http-status");
-const routes = require("./routes/v1");
+const routes = require("./routes/v1"); 
+//By default when you can't find a specific file mentioned in a folder i.e, ./routes/v1/index.js
 const { errorHandler } = require("./middlewares/error");
 const ApiError = require("./utils/ApiError");
 
